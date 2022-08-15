@@ -1,0 +1,792 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group checked="Qt::Checked" expanded="1" name="">
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer patch_size="-1,-1" legend_exp="" source="service='projets' sslmode=verify-ca key='id' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;(WITH attributes AS (   SELECT     vm.id,     e.enjeu,     max(e.surpaturage) surpaturage,     max(e.embroussaillement) embroussaillement,     max(e.brulage) brulage,     max(e.dyn_forest) dyn_forest,     max(e.zoosanit) zoosanit,     max(e.rechauffement) rechauffement   FROM     gn_synthese.synthese_avec_partenaires s     JOIN ag_pasto.vm_entomo_prairie vm USING (id_synthese)     JOIN ag_pasto.tr_entomo_enjeu e USING (cd_ref)   WHERE     s.date_min >= '2000-01-01'   GROUP BY     vm.id, enjeu ) SELECT   attributes.enjeu,   attributes.surpaturage,   attributes.embroussaillement,   attributes.brulage,   attributes.dyn_forest,   attributes.zoosanit,   attributes.rechauffement,   prairie.* FROM   ag_pasto.c_prairie_pra prairie   JOIN attributes USING (id)&#xa;)&quot; (geom)" legend_split_behavior="0" providerKey="postgres" id="Prairies_de_fauche___enjeu_entomo_ab018d68_b5dc_4a1a_8568_55a514a16c81" checked="Qt::Unchecked" expanded="1" name="Prairies de fauche à enjeu entomo (suivant modèle UP)">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer autoRefreshTime="0" legendPlaceholderImage="" type="vector" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" simplifyLocal="1" refreshOnNotifyEnabled="0" wkbType="MultiPolygon" simplifyMaxScale="1" readOnly="0" labelsEnabled="0" minScale="100000000" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" maxScale="0" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" geometry="Polygon">
+      <extent>
+        <xmin>989018.00104503205511719</xmin>
+        <ymin>6332046.82697357982397079</ymin>
+        <xmax>1046893.9976694299839437</xmax>
+        <ymax>6375858.74463323969393969</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>6.60646290774147271</xmin>
+        <ymin>44.00185392155478326</ymin>
+        <xmax>7.35746343081792542</xmax>
+        <ymax>44.42194747714880521</ymax>
+      </wgs84extent>
+      <id>Prairies_de_fauche___enjeu_entomo_ab018d68_b5dc_4a1a_8568_55a514a16c81</id>
+      <datasource>service='projets' sslmode=verify-ca key='id' estimatedmetadata=true checkPrimaryKeyUnicity='1' table="(WITH attributes AS (   SELECT     vm.id,     e.enjeu,     max(e.surpaturage) surpaturage,     max(e.embroussaillement) embroussaillement,     max(e.brulage) brulage,     max(e.dyn_forest) dyn_forest,     max(e.zoosanit) zoosanit,     max(e.rechauffement) rechauffement   FROM     gn_synthese.synthese_avec_partenaires s     JOIN ag_pasto.vm_entomo_prairie vm USING (id_synthese)     JOIN ag_pasto.tr_entomo_enjeu e USING (cd_ref)   WHERE     s.date_min >= '2000-01-01'   GROUP BY     vm.id, enjeu ) SELECT   attributes.enjeu,   attributes.surpaturage,   attributes.embroussaillement,   attributes.brulage,   attributes.dyn_forest,   attributes.zoosanit,   attributes.rechauffement,   prairie.* FROM   ag_pasto.c_prairie_pra prairie   JOIN attributes USING (id)
+)" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Prairies de fauche à enjeu entomo (suivant modèle UP)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+          <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+            <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>145</srsid>
+            <srid>2154</srid>
+            <authid>EPSG:2154</authid>
+            <description>RGF93 / Lambert-93</description>
+            <projectionacronym>lcc</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal limitMode="0" accumulate="0" endField="" startField="" mode="0" enabled="0" startExpression="" durationField="" fixedDuration="0" endExpression="" durationUnit="min">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 attr="enjeu" symbollevels="0" referencescale="-1" enableorderby="0" type="categorizedSymbol" forceraster="0">
+        <categories>
+          <category label="Majeur" value="Majeur" symbol="0" render="true"/>
+          <category label="Fort" value="Fort" symbol="1" render="true"/>
+          <category label="Assez fort" value="Assez fort" symbol="2" render="true"/>
+        </categories>
+        <symbols>
+          <symbol force_rhr="0" type="fill" clip_to_extent="1" name="0" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="227,26,28,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" type="fill" clip_to_extent="1" name="1" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="255,127,0,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,127,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" type="fill" clip_to_extent="1" name="2" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="253,191,111,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="253,191,111,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol force_rhr="0" type="fill" clip_to_extent="1" name="0" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="231,113,72,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="231,113,72,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option value="0" type="int" name="embeddedWidgets/count"/>
+          <Option type="invalid" name="variableNames"/>
+          <Option type="invalid" name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>0.5</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory penColor="#000000" penWidth="0" scaleBasedVisibility="0" spacing="5" minScaleDenominator="0" sizeType="MM" opacity="1" maxScaleDenominator="1e+08" scaleDependency="Area" backgroundAlpha="255" direction="0" barWidth="5" height="15" lineSizeScale="3x:0,0,0,0,0,0" width="15" backgroundColor="#ffffff" spacingUnit="MM" minimumSize="0" rotationOffset="270" labelPlacementMethod="XHeight" penAlpha="255" enabled="0" spacingUnitScale="3x:0,0,0,0,0,0" showAxis="1" lineSizeType="MM" diagramOrientation="Up" sizeScale="3x:0,0,0,0,0,0">
+          <fontProperties style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" field="" color="#000000"/>
+          <axisSymbol>
+            <symbol force_rhr="0" type="line" clip_to_extent="1" name="" alpha="1">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+                <Option type="Map">
+                  <Option value="0" type="QString" name="align_dash_pattern"/>
+                  <Option value="square" type="QString" name="capstyle"/>
+                  <Option value="5;2" type="QString" name="customdash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="customdash_unit"/>
+                  <Option value="0" type="QString" name="dash_pattern_offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+                  <Option value="0" type="QString" name="draw_inside_polygon"/>
+                  <Option value="bevel" type="QString" name="joinstyle"/>
+                  <Option value="35,35,35,255" type="QString" name="line_color"/>
+                  <Option value="solid" type="QString" name="line_style"/>
+                  <Option value="0.26" type="QString" name="line_width"/>
+                  <Option value="MM" type="QString" name="line_width_unit"/>
+                  <Option value="0" type="QString" name="offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="offset_unit"/>
+                  <Option value="0" type="QString" name="ring_filter"/>
+                  <Option value="0" type="QString" name="trim_distance_end"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+                  <Option value="0" type="QString" name="trim_distance_start"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+                  <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+                  <Option value="0" type="QString" name="use_custom_dash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="trim_distance_end" v="0"/>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_end_unit" v="MM"/>
+                <prop k="trim_distance_start" v="0"/>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_start_unit" v="MM"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" showAll="1" dist="0" linePlacementFlags="18" priority="0" placement="1" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option type="Map" name="QgsGeometryGapCheck">
+            <Option value="0" type="double" name="allowedGapsBuffer"/>
+            <Option value="false" type="bool" name="allowedGapsEnabled"/>
+            <Option value="" type="QString" name="allowedGapsLayer"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend showLabelLegend="0" type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="enjeu">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="surpaturage">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="embroussaillement">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="brulage">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="dyn_forest">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="zoosanit">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="rechauffement">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="exploitant">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="irrigation">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nom">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="surface">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nombre_fauche">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="deprimage">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="paturage">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="mecanisable">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="eligible_maec_4_fleurs">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="effectif_bovin">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="effectif_caprin">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="effectif_equin">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="effectif_ovin">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="effectif_porcin">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="commentaire">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="fertilisation">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_fauche_1">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_fauche_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_fauche_3">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="enjeu" name=""/>
+        <alias index="1" field="surpaturage" name=""/>
+        <alias index="2" field="embroussaillement" name=""/>
+        <alias index="3" field="brulage" name=""/>
+        <alias index="4" field="dyn_forest" name=""/>
+        <alias index="5" field="zoosanit" name=""/>
+        <alias index="6" field="rechauffement" name=""/>
+        <alias index="7" field="id" name=""/>
+        <alias index="8" field="exploitant" name=""/>
+        <alias index="9" field="irrigation" name=""/>
+        <alias index="10" field="nom" name=""/>
+        <alias index="11" field="surface" name=""/>
+        <alias index="12" field="nombre_fauche" name=""/>
+        <alias index="13" field="deprimage" name=""/>
+        <alias index="14" field="paturage" name=""/>
+        <alias index="15" field="mecanisable" name=""/>
+        <alias index="16" field="eligible_maec_4_fleurs" name=""/>
+        <alias index="17" field="effectif_bovin" name=""/>
+        <alias index="18" field="effectif_caprin" name=""/>
+        <alias index="19" field="effectif_equin" name=""/>
+        <alias index="20" field="effectif_ovin" name=""/>
+        <alias index="21" field="effectif_porcin" name=""/>
+        <alias index="22" field="commentaire" name=""/>
+        <alias index="23" field="fertilisation" name=""/>
+        <alias index="24" field="date_fauche_1" name=""/>
+        <alias index="25" field="date_fauche_2" name=""/>
+        <alias index="26" field="date_fauche_3" name=""/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="enjeu"/>
+        <default expression="" applyOnUpdate="0" field="surpaturage"/>
+        <default expression="" applyOnUpdate="0" field="embroussaillement"/>
+        <default expression="" applyOnUpdate="0" field="brulage"/>
+        <default expression="" applyOnUpdate="0" field="dyn_forest"/>
+        <default expression="" applyOnUpdate="0" field="zoosanit"/>
+        <default expression="" applyOnUpdate="0" field="rechauffement"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="exploitant"/>
+        <default expression="" applyOnUpdate="0" field="irrigation"/>
+        <default expression="" applyOnUpdate="0" field="nom"/>
+        <default expression="" applyOnUpdate="0" field="surface"/>
+        <default expression="" applyOnUpdate="0" field="nombre_fauche"/>
+        <default expression="" applyOnUpdate="0" field="deprimage"/>
+        <default expression="" applyOnUpdate="0" field="paturage"/>
+        <default expression="" applyOnUpdate="0" field="mecanisable"/>
+        <default expression="" applyOnUpdate="0" field="eligible_maec_4_fleurs"/>
+        <default expression="" applyOnUpdate="0" field="effectif_bovin"/>
+        <default expression="" applyOnUpdate="0" field="effectif_caprin"/>
+        <default expression="" applyOnUpdate="0" field="effectif_equin"/>
+        <default expression="" applyOnUpdate="0" field="effectif_ovin"/>
+        <default expression="" applyOnUpdate="0" field="effectif_porcin"/>
+        <default expression="" applyOnUpdate="0" field="commentaire"/>
+        <default expression="" applyOnUpdate="0" field="fertilisation"/>
+        <default expression="" applyOnUpdate="0" field="date_fauche_1"/>
+        <default expression="" applyOnUpdate="0" field="date_fauche_2"/>
+        <default expression="" applyOnUpdate="0" field="date_fauche_3"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="enjeu" constraints="0"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="surpaturage" constraints="3"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="embroussaillement" constraints="3"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="brulage" constraints="3"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="dyn_forest" constraints="3"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="zoosanit" constraints="3"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="rechauffement" constraints="3"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="exploitant" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="irrigation" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="nom" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="surface" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="nombre_fauche" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="deprimage" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="paturage" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="mecanisable" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="eligible_maec_4_fleurs" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="effectif_bovin" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="effectif_caprin" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="effectif_equin" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="effectif_ovin" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="effectif_porcin" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="commentaire" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="fertilisation" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date_fauche_1" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date_fauche_2" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date_fauche_3" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="enjeu" exp=""/>
+        <constraint desc="" field="surpaturage" exp=""/>
+        <constraint desc="" field="embroussaillement" exp=""/>
+        <constraint desc="" field="brulage" exp=""/>
+        <constraint desc="" field="dyn_forest" exp=""/>
+        <constraint desc="" field="zoosanit" exp=""/>
+        <constraint desc="" field="rechauffement" exp=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="exploitant" exp=""/>
+        <constraint desc="" field="irrigation" exp=""/>
+        <constraint desc="" field="nom" exp=""/>
+        <constraint desc="" field="surface" exp=""/>
+        <constraint desc="" field="nombre_fauche" exp=""/>
+        <constraint desc="" field="deprimage" exp=""/>
+        <constraint desc="" field="paturage" exp=""/>
+        <constraint desc="" field="mecanisable" exp=""/>
+        <constraint desc="" field="eligible_maec_4_fleurs" exp=""/>
+        <constraint desc="" field="effectif_bovin" exp=""/>
+        <constraint desc="" field="effectif_caprin" exp=""/>
+        <constraint desc="" field="effectif_equin" exp=""/>
+        <constraint desc="" field="effectif_ovin" exp=""/>
+        <constraint desc="" field="effectif_porcin" exp=""/>
+        <constraint desc="" field="commentaire" exp=""/>
+        <constraint desc="" field="fertilisation" exp=""/>
+        <constraint desc="" field="date_fauche_1" exp=""/>
+        <constraint desc="" field="date_fauche_2" exp=""/>
+        <constraint desc="" field="date_fauche_3" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" width="-1" type="field" name="enjeu"/>
+          <column hidden="0" width="-1" type="field" name="surpaturage"/>
+          <column hidden="0" width="-1" type="field" name="embroussaillement"/>
+          <column hidden="0" width="-1" type="field" name="brulage"/>
+          <column hidden="0" width="-1" type="field" name="dyn_forest"/>
+          <column hidden="0" width="-1" type="field" name="zoosanit"/>
+          <column hidden="0" width="-1" type="field" name="rechauffement"/>
+          <column hidden="0" width="-1" type="field" name="id"/>
+          <column hidden="0" width="-1" type="field" name="nom"/>
+          <column hidden="0" width="-1" type="field" name="commentaire"/>
+          <column hidden="0" width="-1" type="field" name="commune"/>
+          <column hidden="0" width="-1" type="field" name="surface"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="brulage"/>
+        <field editable="1" name="commentaire"/>
+        <field editable="1" name="commune"/>
+        <field editable="1" name="dyn_forest"/>
+        <field editable="1" name="embroussaillement"/>
+        <field editable="1" name="enjeu"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="nom"/>
+        <field editable="1" name="rechauffement"/>
+        <field editable="1" name="surface"/>
+        <field editable="1" name="surpaturage"/>
+        <field editable="1" name="zoosanit"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="brulage"/>
+        <field labelOnTop="0" name="commentaire"/>
+        <field labelOnTop="0" name="commune"/>
+        <field labelOnTop="0" name="dyn_forest"/>
+        <field labelOnTop="0" name="embroussaillement"/>
+        <field labelOnTop="0" name="enjeu"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="nom"/>
+        <field labelOnTop="0" name="rechauffement"/>
+        <field labelOnTop="0" name="surface"/>
+        <field labelOnTop="0" name="surpaturage"/>
+        <field labelOnTop="0" name="zoosanit"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="brulage"/>
+        <field reuseLastValue="0" name="commentaire"/>
+        <field reuseLastValue="0" name="commune"/>
+        <field reuseLastValue="0" name="dyn_forest"/>
+        <field reuseLastValue="0" name="embroussaillement"/>
+        <field reuseLastValue="0" name="enjeu"/>
+        <field reuseLastValue="0" name="id"/>
+        <field reuseLastValue="0" name="nom"/>
+        <field reuseLastValue="0" name="rechauffement"/>
+        <field reuseLastValue="0" name="surface"/>
+        <field reuseLastValue="0" name="surpaturage"/>
+        <field reuseLastValue="0" name="zoosanit"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"nom"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

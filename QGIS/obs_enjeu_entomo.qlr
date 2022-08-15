@@ -1,0 +1,1480 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group checked="Qt::Checked" expanded="1" name="">
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer patch_size="-1,-1" legend_exp="" source="service='projets' sslmode=verify-ca key='id_synthese' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;(SELECT   e.cd_ref,   e.enjeu,   e.surpaturage,   e.embroussaillement,   e.brulage,   e.dyn_forest,   e.zoosanit,   e.rechauffement,   s.* FROM   gn_synthese.synthese_avec_partenaires s   JOIN ag_pasto.tr_entomo_taxref t USING (cd_nom)   JOIN ag_pasto.tr_entomo_enjeu e USING (cd_ref) WHERE   date_min >= '2000-01-01'&#xa;)&quot; (geom)" legend_split_behavior="0" providerKey="postgres" id="Observations_entomo___enjeu__toutes__31f7b3ce_4c0b_474a_b105_1285924ab6d4" checked="Qt::Checked" expanded="1" name="Observations entomo à enjeu (toutes)">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer autoRefreshTime="0" legendPlaceholderImage="" type="vector" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" simplifyLocal="1" refreshOnNotifyEnabled="0" wkbType="Point" simplifyMaxScale="1" readOnly="0" labelsEnabled="0" minScale="100000000" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" maxScale="0" simplifyDrawingHints="0" simplifyAlgorithm="0" simplifyDrawingTol="1" geometry="Point">
+      <extent>
+        <xmin>983120</xmin>
+        <ymin>6315048.95583982020616531</ymin>
+        <xmax>1073154</xmax>
+        <ymax>6385160</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>6.52350625071674362</xmin>
+        <ymin>43.83571373474258337</ymin>
+        <xmax>7.6935135038120519</xmax>
+        <ymax>44.5080086173287981</ymax>
+      </wgs84extent>
+      <id>Observations_entomo___enjeu__toutes__31f7b3ce_4c0b_474a_b105_1285924ab6d4</id>
+      <datasource>service='projets' sslmode=verify-ca key='id_synthese' estimatedmetadata=true checkPrimaryKeyUnicity='1' table="(SELECT   e.cd_ref,   e.enjeu,   e.surpaturage,   e.embroussaillement,   e.brulage,   e.dyn_forest,   e.zoosanit,   e.rechauffement,   s.* FROM   gn_synthese.synthese_avec_partenaires s   JOIN ag_pasto.tr_entomo_taxref t USING (cd_nom)   JOIN ag_pasto.tr_entomo_enjeu e USING (cd_ref) WHERE   date_min >= '2000-01-01'
+)" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Observations entomo à enjeu (toutes)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+          <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+            <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>145</srsid>
+            <srid>2154</srid>
+            <authid>EPSG:2154</authid>
+            <description>RGF93 / Lambert-93</description>
+            <projectionacronym>lcc</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal limitMode="0" accumulate="0" endField="" startField="" mode="0" enabled="0" startExpression="" durationField="" fixedDuration="0" endExpression="" durationUnit="min">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 attr="enjeu" symbollevels="0" referencescale="-1" enableorderby="0" type="categorizedSymbol" forceraster="0">
+        <categories>
+          <category label="Majeur" value="Majeur" symbol="0" render="true"/>
+          <category label="Fort" value="Fort" symbol="1" render="true"/>
+          <category label="Assez fort" value="Assez fort" symbol="2" render="true"/>
+        </categories>
+        <symbols>
+          <symbol force_rhr="0" type="marker" clip_to_extent="1" name="0" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+              <Option type="Map">
+                <Option value="0" type="QString" name="angle"/>
+                <Option value="square" type="QString" name="cap_style"/>
+                <Option value="227,26,28,255" type="QString" name="color"/>
+                <Option value="1" type="QString" name="horizontal_anchor_point"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="circle" type="QString" name="name"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="diameter" type="QString" name="scale_method"/>
+                <Option value="2" type="QString" name="size"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+                <Option value="MM" type="QString" name="size_unit"/>
+                <Option value="1" type="QString" name="vertical_anchor_point"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="cap_style" v="square"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" type="marker" clip_to_extent="1" name="1" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+              <Option type="Map">
+                <Option value="0" type="QString" name="angle"/>
+                <Option value="square" type="QString" name="cap_style"/>
+                <Option value="255,127,0,255" type="QString" name="color"/>
+                <Option value="1" type="QString" name="horizontal_anchor_point"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="circle" type="QString" name="name"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="diameter" type="QString" name="scale_method"/>
+                <Option value="2" type="QString" name="size"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+                <Option value="MM" type="QString" name="size_unit"/>
+                <Option value="1" type="QString" name="vertical_anchor_point"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="cap_style" v="square"/>
+              <prop k="color" v="255,127,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" type="marker" clip_to_extent="1" name="2" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+              <Option type="Map">
+                <Option value="0" type="QString" name="angle"/>
+                <Option value="square" type="QString" name="cap_style"/>
+                <Option value="253,191,111,255" type="QString" name="color"/>
+                <Option value="1" type="QString" name="horizontal_anchor_point"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="circle" type="QString" name="name"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="diameter" type="QString" name="scale_method"/>
+                <Option value="2" type="QString" name="size"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+                <Option value="MM" type="QString" name="size_unit"/>
+                <Option value="1" type="QString" name="vertical_anchor_point"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="cap_style" v="square"/>
+              <prop k="color" v="253,191,111,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol force_rhr="0" type="marker" clip_to_extent="1" name="0" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+              <Option type="Map">
+                <Option value="0" type="QString" name="angle"/>
+                <Option value="square" type="QString" name="cap_style"/>
+                <Option value="125,139,143,255" type="QString" name="color"/>
+                <Option value="1" type="QString" name="horizontal_anchor_point"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="circle" type="QString" name="name"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="diameter" type="QString" name="scale_method"/>
+                <Option value="2" type="QString" name="size"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+                <Option value="MM" type="QString" name="size_unit"/>
+                <Option value="1" type="QString" name="vertical_anchor_point"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="cap_style" v="square"/>
+              <prop k="color" v="125,139,143,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option value="0" type="int" name="embeddedWidgets/count"/>
+          <Option type="invalid" name="variableNames"/>
+          <Option type="invalid" name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory penColor="#000000" penWidth="0" scaleBasedVisibility="0" spacing="5" minScaleDenominator="0" sizeType="MM" opacity="1" maxScaleDenominator="1e+08" scaleDependency="Area" backgroundAlpha="255" direction="0" barWidth="5" height="15" lineSizeScale="3x:0,0,0,0,0,0" width="15" backgroundColor="#ffffff" spacingUnit="MM" minimumSize="0" rotationOffset="270" labelPlacementMethod="XHeight" penAlpha="255" enabled="0" spacingUnitScale="3x:0,0,0,0,0,0" showAxis="1" lineSizeType="MM" diagramOrientation="Up" sizeScale="3x:0,0,0,0,0,0">
+          <fontProperties style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" field="" color="#000000"/>
+          <axisSymbol>
+            <symbol force_rhr="0" type="line" clip_to_extent="1" name="" alpha="1">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+                <Option type="Map">
+                  <Option value="0" type="QString" name="align_dash_pattern"/>
+                  <Option value="square" type="QString" name="capstyle"/>
+                  <Option value="5;2" type="QString" name="customdash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="customdash_unit"/>
+                  <Option value="0" type="QString" name="dash_pattern_offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+                  <Option value="0" type="QString" name="draw_inside_polygon"/>
+                  <Option value="bevel" type="QString" name="joinstyle"/>
+                  <Option value="35,35,35,255" type="QString" name="line_color"/>
+                  <Option value="solid" type="QString" name="line_style"/>
+                  <Option value="0.26" type="QString" name="line_width"/>
+                  <Option value="MM" type="QString" name="line_width_unit"/>
+                  <Option value="0" type="QString" name="offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="offset_unit"/>
+                  <Option value="0" type="QString" name="ring_filter"/>
+                  <Option value="0" type="QString" name="trim_distance_end"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+                  <Option value="0" type="QString" name="trim_distance_start"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+                  <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+                  <Option value="0" type="QString" name="use_custom_dash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="trim_distance_end" v="0"/>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_end_unit" v="MM"/>
+                <prop k="trim_distance_start" v="0"/>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_start_unit" v="MM"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" showAll="1" dist="0" linePlacementFlags="18" priority="0" placement="0" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend showLabelLegend="0" type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="cd_ref">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="enjeu">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="surpaturage">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="embroussaillement">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="brulage">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="dyn_forest">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="zoosanit">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="rechauffement">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_synthese">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="unique_id_sinp">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="unique_id_sinp_grp">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_source">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_module">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="entity_source_pk_value">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_dataset">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_geo_object_nature">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_grp_typ">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_obs_technique">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_bio_status">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_bio_condition">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_naturalness">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_exist_proof">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_valid_status">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_diffusion_level">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_life_stage">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_sex">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_obj_count">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_type_count">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_sensitivity">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_observation_status">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_blurring">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_source_status">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_info_geo_type">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="count_min">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="count_max">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="cd_nom">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nom_cite">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="meta_v_taxref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sample_number_proof">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="digital_proof">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="non_digital_proof">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="altitude_min">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="altitude_max">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_min">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_max">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="validator">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="validation_comment">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="observers">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="determiner">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_digitiser">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_determination_method">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="comment_context">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="comment_description">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="meta_validation_date">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="meta_create_date">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="meta_update_date">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="reference_biblio">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_area_attachment">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="cd_hab">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="grp_method">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_behaviour">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="place_name">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="precision">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="additional_data">
+          <editWidget type="JsonEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_nomenclature_biogeo_status">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="cd_ref" name=""/>
+        <alias index="1" field="enjeu" name=""/>
+        <alias index="2" field="surpaturage" name=""/>
+        <alias index="3" field="embroussaillement" name=""/>
+        <alias index="4" field="brulage" name=""/>
+        <alias index="5" field="dyn_forest" name=""/>
+        <alias index="6" field="zoosanit" name=""/>
+        <alias index="7" field="rechauffement" name=""/>
+        <alias index="8" field="id_synthese" name=""/>
+        <alias index="9" field="unique_id_sinp" name=""/>
+        <alias index="10" field="unique_id_sinp_grp" name=""/>
+        <alias index="11" field="id_source" name=""/>
+        <alias index="12" field="id_module" name=""/>
+        <alias index="13" field="entity_source_pk_value" name=""/>
+        <alias index="14" field="id_dataset" name=""/>
+        <alias index="15" field="id_nomenclature_geo_object_nature" name=""/>
+        <alias index="16" field="id_nomenclature_grp_typ" name=""/>
+        <alias index="17" field="id_nomenclature_obs_technique" name=""/>
+        <alias index="18" field="id_nomenclature_bio_status" name=""/>
+        <alias index="19" field="id_nomenclature_bio_condition" name=""/>
+        <alias index="20" field="id_nomenclature_naturalness" name=""/>
+        <alias index="21" field="id_nomenclature_exist_proof" name=""/>
+        <alias index="22" field="id_nomenclature_valid_status" name=""/>
+        <alias index="23" field="id_nomenclature_diffusion_level" name=""/>
+        <alias index="24" field="id_nomenclature_life_stage" name=""/>
+        <alias index="25" field="id_nomenclature_sex" name=""/>
+        <alias index="26" field="id_nomenclature_obj_count" name=""/>
+        <alias index="27" field="id_nomenclature_type_count" name=""/>
+        <alias index="28" field="id_nomenclature_sensitivity" name=""/>
+        <alias index="29" field="id_nomenclature_observation_status" name=""/>
+        <alias index="30" field="id_nomenclature_blurring" name=""/>
+        <alias index="31" field="id_nomenclature_source_status" name=""/>
+        <alias index="32" field="id_nomenclature_info_geo_type" name=""/>
+        <alias index="33" field="count_min" name=""/>
+        <alias index="34" field="count_max" name=""/>
+        <alias index="35" field="cd_nom" name=""/>
+        <alias index="36" field="nom_cite" name=""/>
+        <alias index="37" field="meta_v_taxref" name=""/>
+        <alias index="38" field="sample_number_proof" name=""/>
+        <alias index="39" field="digital_proof" name=""/>
+        <alias index="40" field="non_digital_proof" name=""/>
+        <alias index="41" field="altitude_min" name=""/>
+        <alias index="42" field="altitude_max" name=""/>
+        <alias index="43" field="date_min" name=""/>
+        <alias index="44" field="date_max" name=""/>
+        <alias index="45" field="validator" name=""/>
+        <alias index="46" field="validation_comment" name=""/>
+        <alias index="47" field="observers" name=""/>
+        <alias index="48" field="determiner" name=""/>
+        <alias index="49" field="id_digitiser" name=""/>
+        <alias index="50" field="id_nomenclature_determination_method" name=""/>
+        <alias index="51" field="comment_context" name=""/>
+        <alias index="52" field="comment_description" name=""/>
+        <alias index="53" field="meta_validation_date" name=""/>
+        <alias index="54" field="meta_create_date" name=""/>
+        <alias index="55" field="meta_update_date" name=""/>
+        <alias index="56" field="reference_biblio" name=""/>
+        <alias index="57" field="id_area_attachment" name=""/>
+        <alias index="58" field="cd_hab" name=""/>
+        <alias index="59" field="grp_method" name=""/>
+        <alias index="60" field="id_nomenclature_behaviour" name=""/>
+        <alias index="61" field="place_name" name=""/>
+        <alias index="62" field="precision" name=""/>
+        <alias index="63" field="additional_data" name=""/>
+        <alias index="64" field="id_nomenclature_biogeo_status" name=""/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="cd_ref"/>
+        <default expression="" applyOnUpdate="0" field="enjeu"/>
+        <default expression="" applyOnUpdate="0" field="surpaturage"/>
+        <default expression="" applyOnUpdate="0" field="embroussaillement"/>
+        <default expression="" applyOnUpdate="0" field="brulage"/>
+        <default expression="" applyOnUpdate="0" field="dyn_forest"/>
+        <default expression="" applyOnUpdate="0" field="zoosanit"/>
+        <default expression="" applyOnUpdate="0" field="rechauffement"/>
+        <default expression="" applyOnUpdate="0" field="id_synthese"/>
+        <default expression="" applyOnUpdate="0" field="unique_id_sinp"/>
+        <default expression="" applyOnUpdate="0" field="unique_id_sinp_grp"/>
+        <default expression="" applyOnUpdate="0" field="id_source"/>
+        <default expression="" applyOnUpdate="0" field="id_module"/>
+        <default expression="" applyOnUpdate="0" field="entity_source_pk_value"/>
+        <default expression="" applyOnUpdate="0" field="id_dataset"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_geo_object_nature"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_grp_typ"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_obs_technique"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_bio_status"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_bio_condition"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_naturalness"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_exist_proof"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_valid_status"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_diffusion_level"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_life_stage"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_sex"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_obj_count"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_type_count"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_sensitivity"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_observation_status"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_blurring"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_source_status"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_info_geo_type"/>
+        <default expression="" applyOnUpdate="0" field="count_min"/>
+        <default expression="" applyOnUpdate="0" field="count_max"/>
+        <default expression="" applyOnUpdate="0" field="cd_nom"/>
+        <default expression="" applyOnUpdate="0" field="nom_cite"/>
+        <default expression="" applyOnUpdate="0" field="meta_v_taxref"/>
+        <default expression="" applyOnUpdate="0" field="sample_number_proof"/>
+        <default expression="" applyOnUpdate="0" field="digital_proof"/>
+        <default expression="" applyOnUpdate="0" field="non_digital_proof"/>
+        <default expression="" applyOnUpdate="0" field="altitude_min"/>
+        <default expression="" applyOnUpdate="0" field="altitude_max"/>
+        <default expression="" applyOnUpdate="0" field="date_min"/>
+        <default expression="" applyOnUpdate="0" field="date_max"/>
+        <default expression="" applyOnUpdate="0" field="validator"/>
+        <default expression="" applyOnUpdate="0" field="validation_comment"/>
+        <default expression="" applyOnUpdate="0" field="observers"/>
+        <default expression="" applyOnUpdate="0" field="determiner"/>
+        <default expression="" applyOnUpdate="0" field="id_digitiser"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_determination_method"/>
+        <default expression="" applyOnUpdate="0" field="comment_context"/>
+        <default expression="" applyOnUpdate="0" field="comment_description"/>
+        <default expression="" applyOnUpdate="0" field="meta_validation_date"/>
+        <default expression="" applyOnUpdate="0" field="meta_create_date"/>
+        <default expression="" applyOnUpdate="0" field="meta_update_date"/>
+        <default expression="" applyOnUpdate="0" field="reference_biblio"/>
+        <default expression="" applyOnUpdate="0" field="id_area_attachment"/>
+        <default expression="" applyOnUpdate="0" field="cd_hab"/>
+        <default expression="" applyOnUpdate="0" field="grp_method"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_behaviour"/>
+        <default expression="" applyOnUpdate="0" field="place_name"/>
+        <default expression="" applyOnUpdate="0" field="precision"/>
+        <default expression="" applyOnUpdate="0" field="additional_data"/>
+        <default expression="" applyOnUpdate="0" field="id_nomenclature_biogeo_status"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="cd_ref" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="enjeu" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="surpaturage" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="embroussaillement" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="brulage" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="dyn_forest" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="zoosanit" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="rechauffement" constraints="0"/>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id_synthese" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="unique_id_sinp" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="unique_id_sinp_grp" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_source" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_module" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="entity_source_pk_value" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_dataset" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_geo_object_nature" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_grp_typ" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_obs_technique" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_bio_status" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_bio_condition" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_naturalness" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_exist_proof" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_valid_status" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_diffusion_level" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_life_stage" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_sex" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_obj_count" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_type_count" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_sensitivity" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_observation_status" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_blurring" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_source_status" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_info_geo_type" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="count_min" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="count_max" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="cd_nom" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="nom_cite" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="meta_v_taxref" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="sample_number_proof" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="digital_proof" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="non_digital_proof" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="altitude_min" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="altitude_max" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date_min" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date_max" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="validator" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="validation_comment" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="observers" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="determiner" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_digitiser" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_determination_method" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="comment_context" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="comment_description" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="meta_validation_date" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="meta_create_date" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="meta_update_date" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="reference_biblio" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_area_attachment" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="cd_hab" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="grp_method" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_behaviour" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="place_name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="precision" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="additional_data" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="id_nomenclature_biogeo_status" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="cd_ref" exp=""/>
+        <constraint desc="" field="enjeu" exp=""/>
+        <constraint desc="" field="surpaturage" exp=""/>
+        <constraint desc="" field="embroussaillement" exp=""/>
+        <constraint desc="" field="brulage" exp=""/>
+        <constraint desc="" field="dyn_forest" exp=""/>
+        <constraint desc="" field="zoosanit" exp=""/>
+        <constraint desc="" field="rechauffement" exp=""/>
+        <constraint desc="" field="id_synthese" exp=""/>
+        <constraint desc="" field="unique_id_sinp" exp=""/>
+        <constraint desc="" field="unique_id_sinp_grp" exp=""/>
+        <constraint desc="" field="id_source" exp=""/>
+        <constraint desc="" field="id_module" exp=""/>
+        <constraint desc="" field="entity_source_pk_value" exp=""/>
+        <constraint desc="" field="id_dataset" exp=""/>
+        <constraint desc="" field="id_nomenclature_geo_object_nature" exp=""/>
+        <constraint desc="" field="id_nomenclature_grp_typ" exp=""/>
+        <constraint desc="" field="id_nomenclature_obs_technique" exp=""/>
+        <constraint desc="" field="id_nomenclature_bio_status" exp=""/>
+        <constraint desc="" field="id_nomenclature_bio_condition" exp=""/>
+        <constraint desc="" field="id_nomenclature_naturalness" exp=""/>
+        <constraint desc="" field="id_nomenclature_exist_proof" exp=""/>
+        <constraint desc="" field="id_nomenclature_valid_status" exp=""/>
+        <constraint desc="" field="id_nomenclature_diffusion_level" exp=""/>
+        <constraint desc="" field="id_nomenclature_life_stage" exp=""/>
+        <constraint desc="" field="id_nomenclature_sex" exp=""/>
+        <constraint desc="" field="id_nomenclature_obj_count" exp=""/>
+        <constraint desc="" field="id_nomenclature_type_count" exp=""/>
+        <constraint desc="" field="id_nomenclature_sensitivity" exp=""/>
+        <constraint desc="" field="id_nomenclature_observation_status" exp=""/>
+        <constraint desc="" field="id_nomenclature_blurring" exp=""/>
+        <constraint desc="" field="id_nomenclature_source_status" exp=""/>
+        <constraint desc="" field="id_nomenclature_info_geo_type" exp=""/>
+        <constraint desc="" field="count_min" exp=""/>
+        <constraint desc="" field="count_max" exp=""/>
+        <constraint desc="" field="cd_nom" exp=""/>
+        <constraint desc="" field="nom_cite" exp=""/>
+        <constraint desc="" field="meta_v_taxref" exp=""/>
+        <constraint desc="" field="sample_number_proof" exp=""/>
+        <constraint desc="" field="digital_proof" exp=""/>
+        <constraint desc="" field="non_digital_proof" exp=""/>
+        <constraint desc="" field="altitude_min" exp=""/>
+        <constraint desc="" field="altitude_max" exp=""/>
+        <constraint desc="" field="date_min" exp=""/>
+        <constraint desc="" field="date_max" exp=""/>
+        <constraint desc="" field="validator" exp=""/>
+        <constraint desc="" field="validation_comment" exp=""/>
+        <constraint desc="" field="observers" exp=""/>
+        <constraint desc="" field="determiner" exp=""/>
+        <constraint desc="" field="id_digitiser" exp=""/>
+        <constraint desc="" field="id_nomenclature_determination_method" exp=""/>
+        <constraint desc="" field="comment_context" exp=""/>
+        <constraint desc="" field="comment_description" exp=""/>
+        <constraint desc="" field="meta_validation_date" exp=""/>
+        <constraint desc="" field="meta_create_date" exp=""/>
+        <constraint desc="" field="meta_update_date" exp=""/>
+        <constraint desc="" field="reference_biblio" exp=""/>
+        <constraint desc="" field="id_area_attachment" exp=""/>
+        <constraint desc="" field="cd_hab" exp=""/>
+        <constraint desc="" field="grp_method" exp=""/>
+        <constraint desc="" field="id_nomenclature_behaviour" exp=""/>
+        <constraint desc="" field="place_name" exp=""/>
+        <constraint desc="" field="precision" exp=""/>
+        <constraint desc="" field="additional_data" exp=""/>
+        <constraint desc="" field="id_nomenclature_biogeo_status" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" width="-1" type="field" name="cd_ref"/>
+          <column hidden="0" width="-1" type="field" name="enjeu"/>
+          <column hidden="0" width="-1" type="field" name="surpaturage"/>
+          <column hidden="0" width="-1" type="field" name="embroussaillement"/>
+          <column hidden="0" width="-1" type="field" name="brulage"/>
+          <column hidden="0" width="-1" type="field" name="dyn_forest"/>
+          <column hidden="0" width="-1" type="field" name="zoosanit"/>
+          <column hidden="0" width="-1" type="field" name="rechauffement"/>
+          <column hidden="0" width="-1" type="field" name="id_synthese"/>
+          <column hidden="0" width="-1" type="field" name="unique_id_sinp"/>
+          <column hidden="0" width="-1" type="field" name="unique_id_sinp_grp"/>
+          <column hidden="0" width="-1" type="field" name="id_source"/>
+          <column hidden="0" width="-1" type="field" name="id_module"/>
+          <column hidden="0" width="-1" type="field" name="entity_source_pk_value"/>
+          <column hidden="0" width="-1" type="field" name="id_dataset"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_geo_object_nature"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_grp_typ"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_obs_technique"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_bio_status"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_bio_condition"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_naturalness"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_exist_proof"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_valid_status"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_diffusion_level"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_life_stage"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_sex"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_obj_count"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_type_count"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_sensitivity"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_observation_status"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_blurring"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_source_status"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_info_geo_type"/>
+          <column hidden="0" width="-1" type="field" name="count_min"/>
+          <column hidden="0" width="-1" type="field" name="count_max"/>
+          <column hidden="0" width="-1" type="field" name="cd_nom"/>
+          <column hidden="0" width="-1" type="field" name="nom_cite"/>
+          <column hidden="0" width="-1" type="field" name="meta_v_taxref"/>
+          <column hidden="0" width="-1" type="field" name="sample_number_proof"/>
+          <column hidden="0" width="-1" type="field" name="digital_proof"/>
+          <column hidden="0" width="-1" type="field" name="non_digital_proof"/>
+          <column hidden="0" width="-1" type="field" name="altitude_min"/>
+          <column hidden="0" width="-1" type="field" name="altitude_max"/>
+          <column hidden="0" width="-1" type="field" name="date_min"/>
+          <column hidden="0" width="-1" type="field" name="date_max"/>
+          <column hidden="0" width="-1" type="field" name="validator"/>
+          <column hidden="0" width="-1" type="field" name="validation_comment"/>
+          <column hidden="0" width="-1" type="field" name="observers"/>
+          <column hidden="0" width="-1" type="field" name="determiner"/>
+          <column hidden="0" width="-1" type="field" name="id_digitiser"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_determination_method"/>
+          <column hidden="0" width="-1" type="field" name="comment_context"/>
+          <column hidden="0" width="-1" type="field" name="comment_description"/>
+          <column hidden="0" width="-1" type="field" name="meta_validation_date"/>
+          <column hidden="0" width="-1" type="field" name="meta_create_date"/>
+          <column hidden="0" width="-1" type="field" name="meta_update_date"/>
+          <column hidden="0" width="-1" type="field" name="reference_biblio"/>
+          <column hidden="0" width="-1" type="field" name="id_area_attachment"/>
+          <column hidden="0" width="-1" type="field" name="cd_hab"/>
+          <column hidden="0" width="-1" type="field" name="grp_method"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_behaviour"/>
+          <column hidden="0" width="-1" type="field" name="place_name"/>
+          <column hidden="0" width="-1" type="field" name="precision"/>
+          <column hidden="0" width="-1" type="field" name="additional_data"/>
+          <column hidden="0" width="-1" type="field" name="id_nomenclature_biogeo_status"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="additional_data"/>
+        <field editable="1" name="altitude_max"/>
+        <field editable="1" name="altitude_min"/>
+        <field editable="1" name="brulage"/>
+        <field editable="1" name="cd_hab"/>
+        <field editable="1" name="cd_nom"/>
+        <field editable="1" name="cd_ref"/>
+        <field editable="1" name="comment_context"/>
+        <field editable="1" name="comment_description"/>
+        <field editable="1" name="count_max"/>
+        <field editable="1" name="count_min"/>
+        <field editable="1" name="date_max"/>
+        <field editable="1" name="date_min"/>
+        <field editable="1" name="determiner"/>
+        <field editable="1" name="digital_proof"/>
+        <field editable="1" name="dyn_forest"/>
+        <field editable="1" name="embroussaillement"/>
+        <field editable="1" name="enjeu"/>
+        <field editable="1" name="entity_source_pk_value"/>
+        <field editable="1" name="grp_method"/>
+        <field editable="1" name="id_area_attachment"/>
+        <field editable="1" name="id_dataset"/>
+        <field editable="1" name="id_digitiser"/>
+        <field editable="1" name="id_module"/>
+        <field editable="1" name="id_nomenclature_behaviour"/>
+        <field editable="1" name="id_nomenclature_bio_condition"/>
+        <field editable="1" name="id_nomenclature_bio_status"/>
+        <field editable="1" name="id_nomenclature_biogeo_status"/>
+        <field editable="1" name="id_nomenclature_blurring"/>
+        <field editable="1" name="id_nomenclature_determination_method"/>
+        <field editable="1" name="id_nomenclature_diffusion_level"/>
+        <field editable="1" name="id_nomenclature_exist_proof"/>
+        <field editable="1" name="id_nomenclature_geo_object_nature"/>
+        <field editable="1" name="id_nomenclature_grp_typ"/>
+        <field editable="1" name="id_nomenclature_info_geo_type"/>
+        <field editable="1" name="id_nomenclature_life_stage"/>
+        <field editable="1" name="id_nomenclature_naturalness"/>
+        <field editable="1" name="id_nomenclature_obj_count"/>
+        <field editable="1" name="id_nomenclature_obs_technique"/>
+        <field editable="1" name="id_nomenclature_observation_status"/>
+        <field editable="1" name="id_nomenclature_sensitivity"/>
+        <field editable="1" name="id_nomenclature_sex"/>
+        <field editable="1" name="id_nomenclature_source_status"/>
+        <field editable="1" name="id_nomenclature_type_count"/>
+        <field editable="1" name="id_nomenclature_valid_status"/>
+        <field editable="1" name="id_source"/>
+        <field editable="1" name="id_synthese"/>
+        <field editable="1" name="meta_create_date"/>
+        <field editable="1" name="meta_update_date"/>
+        <field editable="1" name="meta_v_taxref"/>
+        <field editable="1" name="meta_validation_date"/>
+        <field editable="1" name="nom_cite"/>
+        <field editable="1" name="non_digital_proof"/>
+        <field editable="1" name="observers"/>
+        <field editable="1" name="place_name"/>
+        <field editable="1" name="precision"/>
+        <field editable="1" name="rechauffement"/>
+        <field editable="1" name="reference_biblio"/>
+        <field editable="1" name="sample_number_proof"/>
+        <field editable="1" name="surpaturage"/>
+        <field editable="1" name="unique_id_sinp"/>
+        <field editable="1" name="unique_id_sinp_grp"/>
+        <field editable="1" name="validation_comment"/>
+        <field editable="1" name="validator"/>
+        <field editable="1" name="zoosanit"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="additional_data"/>
+        <field labelOnTop="0" name="altitude_max"/>
+        <field labelOnTop="0" name="altitude_min"/>
+        <field labelOnTop="0" name="brulage"/>
+        <field labelOnTop="0" name="cd_hab"/>
+        <field labelOnTop="0" name="cd_nom"/>
+        <field labelOnTop="0" name="cd_ref"/>
+        <field labelOnTop="0" name="comment_context"/>
+        <field labelOnTop="0" name="comment_description"/>
+        <field labelOnTop="0" name="count_max"/>
+        <field labelOnTop="0" name="count_min"/>
+        <field labelOnTop="0" name="date_max"/>
+        <field labelOnTop="0" name="date_min"/>
+        <field labelOnTop="0" name="determiner"/>
+        <field labelOnTop="0" name="digital_proof"/>
+        <field labelOnTop="0" name="dyn_forest"/>
+        <field labelOnTop="0" name="embroussaillement"/>
+        <field labelOnTop="0" name="enjeu"/>
+        <field labelOnTop="0" name="entity_source_pk_value"/>
+        <field labelOnTop="0" name="grp_method"/>
+        <field labelOnTop="0" name="id_area_attachment"/>
+        <field labelOnTop="0" name="id_dataset"/>
+        <field labelOnTop="0" name="id_digitiser"/>
+        <field labelOnTop="0" name="id_module"/>
+        <field labelOnTop="0" name="id_nomenclature_behaviour"/>
+        <field labelOnTop="0" name="id_nomenclature_bio_condition"/>
+        <field labelOnTop="0" name="id_nomenclature_bio_status"/>
+        <field labelOnTop="0" name="id_nomenclature_biogeo_status"/>
+        <field labelOnTop="0" name="id_nomenclature_blurring"/>
+        <field labelOnTop="0" name="id_nomenclature_determination_method"/>
+        <field labelOnTop="0" name="id_nomenclature_diffusion_level"/>
+        <field labelOnTop="0" name="id_nomenclature_exist_proof"/>
+        <field labelOnTop="0" name="id_nomenclature_geo_object_nature"/>
+        <field labelOnTop="0" name="id_nomenclature_grp_typ"/>
+        <field labelOnTop="0" name="id_nomenclature_info_geo_type"/>
+        <field labelOnTop="0" name="id_nomenclature_life_stage"/>
+        <field labelOnTop="0" name="id_nomenclature_naturalness"/>
+        <field labelOnTop="0" name="id_nomenclature_obj_count"/>
+        <field labelOnTop="0" name="id_nomenclature_obs_technique"/>
+        <field labelOnTop="0" name="id_nomenclature_observation_status"/>
+        <field labelOnTop="0" name="id_nomenclature_sensitivity"/>
+        <field labelOnTop="0" name="id_nomenclature_sex"/>
+        <field labelOnTop="0" name="id_nomenclature_source_status"/>
+        <field labelOnTop="0" name="id_nomenclature_type_count"/>
+        <field labelOnTop="0" name="id_nomenclature_valid_status"/>
+        <field labelOnTop="0" name="id_source"/>
+        <field labelOnTop="0" name="id_synthese"/>
+        <field labelOnTop="0" name="meta_create_date"/>
+        <field labelOnTop="0" name="meta_update_date"/>
+        <field labelOnTop="0" name="meta_v_taxref"/>
+        <field labelOnTop="0" name="meta_validation_date"/>
+        <field labelOnTop="0" name="nom_cite"/>
+        <field labelOnTop="0" name="non_digital_proof"/>
+        <field labelOnTop="0" name="observers"/>
+        <field labelOnTop="0" name="place_name"/>
+        <field labelOnTop="0" name="precision"/>
+        <field labelOnTop="0" name="rechauffement"/>
+        <field labelOnTop="0" name="reference_biblio"/>
+        <field labelOnTop="0" name="sample_number_proof"/>
+        <field labelOnTop="0" name="surpaturage"/>
+        <field labelOnTop="0" name="unique_id_sinp"/>
+        <field labelOnTop="0" name="unique_id_sinp_grp"/>
+        <field labelOnTop="0" name="validation_comment"/>
+        <field labelOnTop="0" name="validator"/>
+        <field labelOnTop="0" name="zoosanit"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="additional_data"/>
+        <field reuseLastValue="0" name="altitude_max"/>
+        <field reuseLastValue="0" name="altitude_min"/>
+        <field reuseLastValue="0" name="brulage"/>
+        <field reuseLastValue="0" name="cd_hab"/>
+        <field reuseLastValue="0" name="cd_nom"/>
+        <field reuseLastValue="0" name="cd_ref"/>
+        <field reuseLastValue="0" name="comment_context"/>
+        <field reuseLastValue="0" name="comment_description"/>
+        <field reuseLastValue="0" name="count_max"/>
+        <field reuseLastValue="0" name="count_min"/>
+        <field reuseLastValue="0" name="date_max"/>
+        <field reuseLastValue="0" name="date_min"/>
+        <field reuseLastValue="0" name="determiner"/>
+        <field reuseLastValue="0" name="digital_proof"/>
+        <field reuseLastValue="0" name="dyn_forest"/>
+        <field reuseLastValue="0" name="embroussaillement"/>
+        <field reuseLastValue="0" name="enjeu"/>
+        <field reuseLastValue="0" name="entity_source_pk_value"/>
+        <field reuseLastValue="0" name="grp_method"/>
+        <field reuseLastValue="0" name="id_area_attachment"/>
+        <field reuseLastValue="0" name="id_dataset"/>
+        <field reuseLastValue="0" name="id_digitiser"/>
+        <field reuseLastValue="0" name="id_module"/>
+        <field reuseLastValue="0" name="id_nomenclature_behaviour"/>
+        <field reuseLastValue="0" name="id_nomenclature_bio_condition"/>
+        <field reuseLastValue="0" name="id_nomenclature_bio_status"/>
+        <field reuseLastValue="0" name="id_nomenclature_biogeo_status"/>
+        <field reuseLastValue="0" name="id_nomenclature_blurring"/>
+        <field reuseLastValue="0" name="id_nomenclature_determination_method"/>
+        <field reuseLastValue="0" name="id_nomenclature_diffusion_level"/>
+        <field reuseLastValue="0" name="id_nomenclature_exist_proof"/>
+        <field reuseLastValue="0" name="id_nomenclature_geo_object_nature"/>
+        <field reuseLastValue="0" name="id_nomenclature_grp_typ"/>
+        <field reuseLastValue="0" name="id_nomenclature_info_geo_type"/>
+        <field reuseLastValue="0" name="id_nomenclature_life_stage"/>
+        <field reuseLastValue="0" name="id_nomenclature_naturalness"/>
+        <field reuseLastValue="0" name="id_nomenclature_obj_count"/>
+        <field reuseLastValue="0" name="id_nomenclature_obs_technique"/>
+        <field reuseLastValue="0" name="id_nomenclature_observation_status"/>
+        <field reuseLastValue="0" name="id_nomenclature_sensitivity"/>
+        <field reuseLastValue="0" name="id_nomenclature_sex"/>
+        <field reuseLastValue="0" name="id_nomenclature_source_status"/>
+        <field reuseLastValue="0" name="id_nomenclature_type_count"/>
+        <field reuseLastValue="0" name="id_nomenclature_valid_status"/>
+        <field reuseLastValue="0" name="id_source"/>
+        <field reuseLastValue="0" name="id_synthese"/>
+        <field reuseLastValue="0" name="meta_create_date"/>
+        <field reuseLastValue="0" name="meta_update_date"/>
+        <field reuseLastValue="0" name="meta_v_taxref"/>
+        <field reuseLastValue="0" name="meta_validation_date"/>
+        <field reuseLastValue="0" name="nom_cite"/>
+        <field reuseLastValue="0" name="non_digital_proof"/>
+        <field reuseLastValue="0" name="observers"/>
+        <field reuseLastValue="0" name="place_name"/>
+        <field reuseLastValue="0" name="precision"/>
+        <field reuseLastValue="0" name="rechauffement"/>
+        <field reuseLastValue="0" name="reference_biblio"/>
+        <field reuseLastValue="0" name="sample_number_proof"/>
+        <field reuseLastValue="0" name="surpaturage"/>
+        <field reuseLastValue="0" name="unique_id_sinp"/>
+        <field reuseLastValue="0" name="unique_id_sinp_grp"/>
+        <field reuseLastValue="0" name="validation_comment"/>
+        <field reuseLastValue="0" name="validator"/>
+        <field reuseLastValue="0" name="zoosanit"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"place_name"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>
